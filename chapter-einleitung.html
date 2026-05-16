@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <meta name="ctx-tenant" content="te-systems"/>
-<title>Übersicht · Sales Training</title>
+<title>Einleitung · Sales Training</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
@@ -22,7 +22,7 @@
       </div>
     </div>
     <nav class="nav">
-      <a class="nav-lesson nav-overview-btn is-active" href="index.html">
+      <a class="nav-lesson nav-overview-btn" href="index.html">
         <span class="nav-icon-wrap"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.2"/><rect x="14" y="3" width="7" height="7" rx="1.2"/><rect x="3" y="14" width="7" height="7" rx="1.2"/><rect x="14" y="14" width="7" height="7" rx="1.2"/></svg></span>
         <span class="nav-lesson-title">Übersicht</span>
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:auto;flex-shrink:0;color:var(--text-muted)"><path d="m9 18 6-6-6-6"/></svg>
@@ -35,7 +35,7 @@
           <svg class="nav-acc-chev is-open" id="nav-sec-chev-module" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
         </button>
         <div class="nav-acc-body is-open" id="nav-sec-body-module">
-          <a class="nav-lesson" data-id="IhU2g8nh1yIc80WsGNpt" href="chapter-einleitung.html">
+          <a class="nav-lesson is-active" data-id="IhU2g8nh1yIc80WsGNpt" href="chapter-einleitung.html">
             <span class="nav-num">1</span>
             <span class="nav-lesson-title">Einleitung</span>
           </a>
@@ -79,7 +79,7 @@
   <div class="main">
     <header class="topbar">
       <div class="topbar-left">
-        <div class="topbar-title">Übersicht</div>
+        <div class="topbar-title">Einleitung</div>
       </div>
       <div class="topbar-right">
         <div class="lang-switch">
@@ -100,48 +100,54 @@
     </header>
     <div class="main-scroll" id="scroll-area">
 
-  <div class="overview-page">
+  <div class="lesson-page">
     <div class="page-head">
       <div>
-        <div class="page-kicker">anynode Academy</div>
-        <h1 class="page-title">Sales Training</h1>
+        <div class="page-kicker">anynode Academy · Sales Training</div>
+        <h1 class="page-title">Einleitung</h1>
         <p class="page-sub">
-          <span class="pill pill-accent">7 Lektionen</span>
-          <span class="pill">7 Module</span>
+          <span class="pill pill-accent">Lektion 1 / 7</span>
+          <span class="pill">last update: 14.5.2026</span>
         </p>
       </div>
-      <a href="chapter-einleitung.html" class="btn primary">Kurs starten <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+      <button class="btn done-btn" id="done-btn-IhU2g8nh1yIc80WsGNpt" onclick="toggleDone('IhU2g8nh1yIc80WsGNpt')">
+        <span class="check-circle-el" id="check-el-IhU2g8nh1yIc80WsGNpt"></span>
+        <span id="done-label-IhU2g8nh1yIc80WsGNpt">Als erledigt markieren</span>
+      </button>
     </div>
-    <div class="module-grid">
-      <a class="module-card" href="chapter-einleitung.html">
-          <div class="module-card-num">Modul 1</div>
-          <div class="module-card-title">Einleitung</div>
-          <div class="module-card-meta">1 Lektion</div>
-        </a><a class="module-card" href="chapter-werteversprechen.html">
-          <div class="module-card-num">Modul 2</div>
-          <div class="module-card-title">Werteversprechen</div>
-          <div class="module-card-meta">1 Lektion</div>
-        </a><a class="module-card" href="chapter-unterstuetzung-beim-verkaufsprozess.html">
-          <div class="module-card-num">Modul 3</div>
-          <div class="module-card-title">Unterstützung beim Verkaufsprozess</div>
-          <div class="module-card-meta">1 Lektion</div>
-        </a><a class="module-card" href="chapter-anynode-lizenzmodelle.html">
-          <div class="module-card-num">Modul 4</div>
-          <div class="module-card-title">anynode Lizenzmodelle</div>
-          <div class="module-card-meta">1 Lektion</div>
-        </a><a class="module-card" href="chapter-angebotsprozess-und-vertriebsablauf.html">
-          <div class="module-card-num">Modul 5</div>
-          <div class="module-card-title">Angebotsprozess und Vertriebsablauf</div>
-          <div class="module-card-meta">1 Lektion</div>
-        </a><a class="module-card" href="chapter-zusatzbausteine.html">
-          <div class="module-card-num">Modul 6</div>
-          <div class="module-card-title">Zusatzbausteine</div>
-          <div class="module-card-meta">1 Lektion</div>
-        </a><a class="module-card" href="chapter-community-ressourcen.html">
-          <div class="module-card-num">Modul 7</div>
-          <div class="module-card-title">Community &amp; Ressourcen</div>
-          <div class="module-card-meta">1 Lektion</div>
-        </a>
+    
+    <div class="lesson-layout">
+      <div class="lesson-main" id="main-IhU2g8nh1yIc80WsGNpt"><div class="module-content lesson-content"><h1></h1><p></p><h1><span style="font-weight: normal;">Erfolgreich Verkaufen lernen: Der anynode Sales Workshop</span></h1><p></p><p></p><h3><span style="font-weight: normal;">Dieser Sales Workshop ist bewusst kein technisches Training. Er ist der vertriebliche Einstieg in die Welt von anynode – The Software SBC mit einem klaren Fokus: mehr Verkaufschancen, schnellere Angebote und erfolgreichere Abschlüsse.</span></h3><br><p></p><p>Warum gibt es diesen Workshop?<br>Der Markt für Unified Communications entwickelt sich schnell. Kunden erwarten heute klare Lösungen, schnelle Antworten und fundierte Beratung. Genau hier setzt dieser Workshop an. Er vermittelt das notwendige Wissen und die richtigen Ansätze, damit Vertriebsteams anynode sicher positionieren, verständlich erklären und gezielt verkaufen können.<br></p><p>Lösungen in konkrete Kundenvorteile übersetzen<br>Der Workshop zeigt, wie anynode in realen Projekten eingesetzt wird und wie daraus konkrete Verkaufschancen entstehen. Ziel ist es, Unsicherheit im Verkaufsprozess zu reduzieren und gleichzeitig die Abschlussquote nachhaltig zu steigern.<br></p><p>Das Format ist als kompaktes und praxisorientiertes Sales-Enablement aufgebaut. Es geht nicht um theoretisches Wissen, sondern um direkt anwendbare Inhalte. Teilnehmer lernen, wie sie typische Projektsituationen erkennen, Angebote korrekt kalkulieren und anynode klar vom Wettbewerb differenzieren.<br></p><p>Die Erwartung<br>Dies ist keine technische Schulung, sondern ein verkaufsrelevanter Einstieg. Der Fokus liegt auf Argumentation, Positionierung und Preisverständnis – also genau den Themen, die im Kundengespräch den Unterschied machen.<br></p><p>Das übergeordnete Ziel<br>Nach Abschluss des Workshops sollen die Teilnehmer in der Lage sein, anynode aktiv und gezielt im Vertrieb zu platzieren und einzusetzen. Darüber hinaus sollen sie befähigt werden, schneller und effizienter zu qualifizierten Verkaufschancen (VKC) zu gelangen und diese systematisch sowie strukturiert in konkrete Angebote und letztendlich in erfolgreiche&nbsp;</p><p>Abschlüsse zu überführen.<br>Dieser umfassende Ansatz folgt dem grundlegenden Gedanken des anynode Partner Programms: Partner sollen nicht ausschließlich theoretisches Wissen aufbauen und sich damit begnügen, sondern vielmehr in die notwendige Position versetzt werden, um eigenständig erfolgreich zu verkaufen und ihr Geschäft nachhaltig sowie profitabel auszubauen. Nur durch diese praxisorientierte und handlungsorientierte Herangehensweise können Partner ihre Marktchancen optimal nutzen und langfristiges Geschäftswachstum realisieren.Gleichzeitig wird der Workshop durch klare Inhalte und strukturierte Vermittlung unterstützt, die darauf abzielen, Partner zu befähigen, sicher zu kalkulieren, überzeugend zu argumentieren und sich klar im Wettbewerb zu differenzieren.</p><div class="scriptor-paragraph" attribution="{&quot;id&quot;:&quot;tautz@te-systems.com&quot;,&quot;name&quot;:&quot;Tom Tautz&quot;,&quot;timestamp&quot;:1776426600000,&quot;email&quot;:&quot;tautz@te-systems.com&quot;,&quot;oid&quot;:&quot;daee5b93-b260-421b-8003-6852e7314485&quot;,&quot;dataSource&quot;:0}" style="direction: ltr;"><span attribution="{&quot;id&quot;:&quot;tautz@te-systems.com&quot;,&quot;name&quot;:&quot;Tom Tautz&quot;,&quot;timestamp&quot;:1776426600000,&quot;email&quot;:&quot;tautz@te-systems.com&quot;,&quot;oid&quot;:&quot;daee5b93-b260-421b-8003-6852e7314485&quot;,&quot;dataSource&quot;:0}"><!--ScriptorEndFragment--></span></div></div></div>
+      <aside class="lesson-sidebar">
+        <div class="sidebar-card" id="lek-card-IhU2g8nh1yIc80WsGNpt" style="display:none">
+        <div class="scard-head"><span class="scard-title">Lektionen</span></div>
+        <div class="scard-list" id="lek-list-IhU2g8nh1yIc80WsGNpt"></div>
+      </div>
+        <div class="sidebar-card">
+        <div class="scard-head"><span class="scard-title">Lernziele</span></div>
+        <ul class="obj-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4.5 4.5L19 7"/></svg>Kerninhalte dieser Lektion verstehen und anwenden</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4.5 4.5L19 7"/></svg>Wichtige Konzepte erkennen und einordnen</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4.5 4.5L19 7"/></svg>Das Erlernte in konkreten Situationen einsetzen</li>
+        </ul>
+      </div>
+      </aside>
+    </div>
+    
+    <div class="lesson-quiz" id="lq-wrap-IhU2g8nh1yIc80WsGNpt">
+      <button class="lesson-quiz-toggle" onclick="toggleLQ('IhU2g8nh1yIc80WsGNpt')">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg>
+        Wissenscheck: Einleitung
+        <svg class="lq-chev" id="lq-chev-IhU2g8nh1yIc80WsGNpt" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div class="lesson-quiz-body" id="lq-body-IhU2g8nh1yIc80WsGNpt" style="display:none">
+        <ol class="quiz-list" id="lq-list-IhU2g8nh1yIc80WsGNpt"></ol>
+        <div class="lesson-quiz-actions" id="lq-actions-IhU2g8nh1yIc80WsGNpt">
+          <button class="btn primary" id="lq-submit-IhU2g8nh1yIc80WsGNpt" onclick="submitLQ('IhU2g8nh1yIc80WsGNpt')" disabled>Auswerten</button>
+        </div>
+      </div>
+    </div>
+    <div class="module-foot">
+      <span></span>
+      <a href="chapter-werteversprechen.html" class="btn primary">Werteversprechen<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
     </div>
   </div>
     </div>
@@ -182,7 +188,7 @@
     <button class="chat-send" id="chat-send-btn" onclick="sendChat()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12 21 4l-4 17-4-8-9-1z"/></svg></button>
   </div>
 </div>
-
+<script type="application/json" id="ctx-lq">{"IhU2g8nh1yIc80WsGNpt":[{"explain":"Der Text betont explizit, dass dies \"bewusst kein technisches Training\" ist, sondern ein \"verkaufsrelevanter Einstieg\" mit Fokus auf Argumentation, Positionierung und Preisverständnis – genau den Themen, die im Kundengespräch den Unterschied machen.","correct":1,"options":["Der Workshop vermittelt technische Spezifikationen von anynode detailliert","Der Workshop konzentriert sich auf Verkaufsargumentation, Positionierung und Preisverständnis statt auf technisches Wissen","Der Workshop richtet sich ausschließlich an technische Administratoren","Der Workshop behandelt nur die Installation und Konfiguration von anynode"],"q":"Welcher zentrale Unterschied besteht zwischen diesem anynode Sales Workshop und einem technischen Training?"},{"correct":2,"explain":"Das übergeordnete Ziel fokussiert auf Vertriebsfähigkeit, schnellere Qualifizierung und systematische Angebotskonvertierung – nicht auf technische Programmierung oder Implementierung durch die Teilnehmer selbst.","q":"Welches der folgenden Ziele ist nach Abschluss des Workshops NICHT explizit genannt?","options":["Teilnehmer sollen anynode aktiv und gezielt im Vertrieb platzieren können","Teilnehmer sollen schneller zu qualifizierten Verkaufschancen gelangen","Teilnehmer sollen die technische Programmierung von anynode selbst durchführen können","Teilnehmer sollen Verkaufschancen in konkrete Angebote und Abschlüsse überführen"]},{"options":["Weil der Markt für Unified Communications stagniert und Innovationen fehlen","Weil Kunden schnelle Lösungen, klare Beratung und fundiertes Wissen erwarten und der Markt sich schnell entwickelt","Weil anynode technisch zu komplex für Partner ist","Weil das anynode Partner Programm alle Partner zur Teilnahme verpflichtet"],"q":"Warum wird dieser Workshop gemäß dem Text als notwendig erachtet?","explain":"Der Text besagt: \"Der Markt für Unified Communications entwickelt sich schnell. Kunden erwarten heute klare Lösungen, schnelle Antworten und fundierte Beratung. Genau hier setzt dieser Workshop an.\"","correct":1},{"q":"Welcher Ansatz folgt dem grundlegenden Gedanken des anynode Partner Programms nach dem Workshop-Text?","options":["Partner sollen sich mit theoretischem Wissen begnügen und eigenständig keine Verkäufe durchführen","Partner sollen ausschließlich Wartungsaufgaben für bestehende Kunden übernehmen","Partner sollen befähigt werden, eigenständig erfolgreich zu verkaufen und ihr Geschäft nachhaltig auszubauen – nicht nur theoretisches Wissen aufzubauen","Partner sollen alle technischen Implementierungen selbst durchführen"],"correct":2,"explain":"Der Text erklärt: \"Partner sollen nicht ausschließlich theoretisches Wissen aufbauen und sich damit begnügen, sondern vielmehr in die notwendige Position versetzt werden, um eigenständig erfolgreich zu verkaufen und ihr Geschäft nachhaltig sowie profitabel auszubauen.\""}]}</script>
 <script>
 
 var LESSONS=[];var TITLES={};
@@ -197,7 +203,7 @@ var LESSONS=[];var TITLES={};
 })();
 const TENANT_ID=(document.querySelector('meta[name="ctx-tenant"]')||{content:''}).content||'';
 const PK='ctx.progress.sales-training';
-var CUR_PAGE='__overview__';
+var CUR_PAGE='IhU2g8nh1yIc80WsGNpt';
 let prog=JSON.parse(localStorage.getItem(PK)||'{}');
 
 function updateProgress(){
@@ -294,7 +300,8 @@ try{
   if(CUR_PAGE!=='__overview__'&&CUR_PAGE!=='__cert__'){updateDoneBtn(CUR_PAGE);buildLektionenToc(CUR_PAGE);}
   if(CUR_PAGE==='__cert__'){try{renderQuiz();}catch(e){}}
 }catch(e){console.warn('[ContextR] Init error:',e);}
-
+/* ── Quiz data ── */
+try{var _lqEl=document.getElementById('ctx-lq');if(_lqEl)LQ=JSON.parse(_lqEl.textContent||'{}');}catch(e){}
 </script>
 </body>
 </html>
