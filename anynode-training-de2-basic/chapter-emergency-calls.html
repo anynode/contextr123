@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="ctx-tenant" content="te-systems"/>
+<title>Emergency Calls · Basic Online Training</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></div>
+      <div>
+        <div class="brand-name">Basic Online Training</div>
+        <div class="brand-tag">anynode Academy</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a class="nav-lesson nav-overview-btn" href="index.html">
+        <span class="nav-icon-wrap"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.2"/><rect x="14" y="3" width="7" height="7" rx="1.2"/><rect x="3" y="14" width="7" height="7" rx="1.2"/><rect x="14" y="14" width="7" height="7" rx="1.2"/></svg></span>
+        <span class="nav-lesson-title">Übersicht</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:auto;flex-shrink:0;color:var(--text-muted)"><path d="m9 18 6-6-6-6"/></svg>
+      </a>
+      <div class="nav-cert-divider"></div>
+      <div class="nav-acc-sec">
+        <button class="nav-acc-head" onclick="toggleNavSec('module')">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5A1.5 1.5 0 0 1 5.5 3H19v15.5"/><path d="M19 18.5H5.5A1.5 1.5 0 0 0 4 20v0a1.5 1.5 0 0 0 1.5 1.5H19"/><path d="M8 7h7M8 10h7"/></svg>
+          <span>Lernmodule</span>
+          <svg class="nav-acc-chev is-open" id="nav-sec-chev-module" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+        <div class="nav-acc-body is-open" id="nav-sec-body-module">
+          <a class="nav-lesson" data-id="EcXqPUM3S80iZqly8laS" href="chapter-introduction.html">
+            <span class="nav-num">1</span>
+            <span class="nav-lesson-title">Introduction</span>
+          </a>
+          <a class="nav-lesson" data-id="6hZ2boTqt8cB18a3qfc2" href="chapter-te-systems-resources.html">
+            <span class="nav-num">2</span>
+            <span class="nav-lesson-title">TE-SYSTEMS Resources</span>
+          </a>
+          <a class="nav-lesson" data-id="R8vPSxcfVoioeG9eYRzj" href="chapter-anynode-the-software-sbc.html">
+            <span class="nav-num">3</span>
+            <span class="nav-lesson-title">anynode – The Software SBC</span>
+          </a>
+          <a class="nav-lesson" data-id="b5SdIXL8FFLP0VZQ7dAA" href="chapter-training-environment.html">
+            <span class="nav-num">4</span>
+            <span class="nav-lesson-title">Training Environment</span>
+          </a>
+          <a class="nav-lesson" data-id="VRaSzbsTCrbcVdhFsjEf" href="chapter-installation.html">
+            <span class="nav-num">5</span>
+            <span class="nav-lesson-title">Installation</span>
+          </a>
+          <a class="nav-lesson" data-id="18Kv3ld42shq74rEB2r8" href="chapter-licensing.html">
+            <span class="nav-num">6</span>
+            <span class="nav-lesson-title">Licensing</span>
+          </a>
+          <a class="nav-lesson" data-id="WgnHRTPNBMpX3ctCIfoP" href="chapter-menu-structure.html">
+            <span class="nav-num">7</span>
+            <span class="nav-lesson-title">Menu Structure</span>
+          </a>
+          <a class="nav-lesson" data-id="il85qLvTwcEhLP1UBDYs" href="chapter-set-up-provider.html">
+            <span class="nav-num">8</span>
+            <span class="nav-lesson-title">Set up Provider</span>
+          </a>
+          <a class="nav-lesson" data-id="dNropESW2aq3KFTy1Ix3" href="chapter-set-up-pbx.html">
+            <span class="nav-num">9</span>
+            <span class="nav-lesson-title">Set up PBX</span>
+          </a>
+          <a class="nav-lesson" data-id="mihLXaqqllSZ11YMFMSP" href="chapter-dial-string-rewriting.html">
+            <span class="nav-num">10</span>
+            <span class="nav-lesson-title">Dial String Rewriting</span>
+          </a>
+          <a class="nav-lesson" data-id="zAenBD8g6VqHI7NAb56C" href="chapter-trace-analyzing.html">
+            <span class="nav-num">11</span>
+            <span class="nav-lesson-title">Trace Analyzing</span>
+          </a>
+          <a class="nav-lesson" data-id="3EFTSxZVO5RzgDbrEtDs" href="chapter-extend-configuration-with-teams.html">
+            <span class="nav-num">12</span>
+            <span class="nav-lesson-title">Extend Configuration with Teams</span>
+          </a>
+          <a class="nav-lesson" data-id="s0w6H7IwFbuHQT2bzwqP" href="chapter-add-xcapi-node.html">
+            <span class="nav-num">13</span>
+            <span class="nav-lesson-title">Add XCAPI Node</span>
+          </a>
+          <a class="nav-lesson" data-id="xNADueDcAePUwEkeN5Hp" href="chapter-attend-transfer-with-xtest.html">
+            <span class="nav-num">14</span>
+            <span class="nav-lesson-title">Attend Transfer with XTEST</span>
+          </a>
+          <a class="nav-lesson" data-id="fBEcTZ4X3sRv5KsTEVPl" href="chapter-path-replacement-with-anynode.html">
+            <span class="nav-num">15</span>
+            <span class="nav-lesson-title">Path Replacement with anynode</span>
+          </a>
+          <a class="nav-lesson" data-id="V7ud5nw996T2PvgtFDy7" href="chapter-fax-and-anynode.html">
+            <span class="nav-num">16</span>
+            <span class="nav-lesson-title">Fax and anynode</span>
+          </a>
+          <a class="nav-lesson" data-id="tg44X4mCQkyuodk5BoUa" href="chapter-failover-to-provider.html">
+            <span class="nav-num">17</span>
+            <span class="nav-lesson-title">Failover to Provider</span>
+          </a>
+          <a class="nav-lesson" data-id="puTud8JnumhV5o7YnHHw" href="chapter-encrypted-tls-connection-to-ip-pbx.html">
+            <span class="nav-num">18</span>
+            <span class="nav-lesson-title">Encrypted TLS connection to IP PBX</span>
+          </a>
+          <a class="nav-lesson" data-id="zgGRnkWrO3YDxSU83mYb" href="chapter-ldap-based-routing-azure-dial-string-directory.html">
+            <span class="nav-num">19</span>
+            <span class="nav-lesson-title">LDAP based routing – Azure Dial String Directory</span>
+          </a>
+          <a class="nav-lesson" data-id="jfgfOkSJ4PoVfQQHii8J" href="chapter-routing-based-on-azure-dial-string-directory.html">
+            <span class="nav-num">20</span>
+            <span class="nav-lesson-title">Routing based on Azure Dial String Directory</span>
+          </a>
+          <a class="nav-lesson is-active" data-id="yIrmG9RSQOaRGmdkrtnt" href="chapter-emergency-calls.html">
+            <span class="nav-num">21</span>
+            <span class="nav-lesson-title">Emergency Calls</span>
+          </a>
+          <a class="nav-lesson" data-id="gCgnR48Zwq2iDVmzv2Eh" href="chapter-support.html">
+            <span class="nav-num">22</span>
+            <span class="nav-lesson-title">Support</span>
+          </a>
+        </div>
+      </div>
+      <div class="nav-cert-divider"></div>
+      <a class="nav-lesson nav-cert-btn" href="cert.html">
+        <span class="nav-icon-wrap"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8v4a4 4 0 0 1-8 0V4z"/><path d="M16 5h3v2a3 3 0 0 1-3 3M8 5H5v2a3 3 0 0 0 3 3"/><path d="M10 12v3M14 12v3M9 19h6M12 15v4"/></svg></span>
+        <span class="nav-lesson-title">Wissenstest &amp; Zertifikat</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left:auto;flex-shrink:0;color:var(--text-muted)"><path d="m9 18 6-6-6-6"/></svg>
+      </a></nav>
+    <div class="side-foot">
+      <div class="foot-row"><span class="foot-label">Fortschritt</span><span class="foot-val" id="foot-pct">0%</span></div>
+      <div class="progress"><div class="progress-fill" id="prog-fill"></div></div>
+    </div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="topbar-left">
+        <div class="topbar-title">Emergency Calls</div>
+      </div>
+      <div class="topbar-right">
+        <div class="lang-switch">
+          <button class="lang-btn is-active" data-lang="de" onclick="setLang('de')">DE</button>
+          <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        </div>
+        <div class="ring-wrap">
+          <svg width="44" height="44" id="ring-svg">
+            <circle cx="22" cy="22" r="17" stroke="var(--border)" stroke-width="5" fill="none"/>
+            <circle cx="22" cy="22" r="17" stroke="var(--accent)" stroke-width="5" fill="none"
+              stroke-dasharray="106.81" stroke-dashoffset="106.81" stroke-linecap="round"
+              transform="rotate(-90 22 22)" id="ring-arc" style="transition:stroke-dashoffset .5s ease"/>
+          </svg>
+          <div class="ring-label" id="ring-label">0%</div>
+        </div>
+        <span style="font-size:11px;color:var(--text-muted);font-family:var(--font-mono)">ContextR · 16.5.2026</span>
+      </div>
+    </header>
+    <div class="main-scroll" id="scroll-area">
+
+  <div class="lesson-page">
+    <div class="page-head">
+      <div>
+        <div class="page-kicker">anynode Academy · Basic Online Training</div>
+        <h1 class="page-title">Emergency Calls</h1>
+        <p class="page-sub">
+          <span class="pill pill-accent">Lektion 21 / 22</span>
+          <span class="pill">last update: 13.5.2026</span>
+        </p>
+      </div>
+      <button class="btn done-btn" id="done-btn-yIrmG9RSQOaRGmdkrtnt" onclick="toggleDone('yIrmG9RSQOaRGmdkrtnt')">
+        <span class="check-circle-el" id="check-el-yIrmG9RSQOaRGmdkrtnt"></span>
+        <span id="done-label-yIrmG9RSQOaRGmdkrtnt">Als erledigt markieren</span>
+      </button>
+    </div>
+    
+    <div class="lesson-layout">
+      <div class="lesson-main" id="main-yIrmG9RSQOaRGmdkrtnt"><div class="module-content lesson-content"><p>Beginnen Sie zu schreiben — oder nutzen Sie die Werkzeugleiste oben.</p></div></div>
+      <aside class="lesson-sidebar">
+        <div class="sidebar-card" id="lek-card-yIrmG9RSQOaRGmdkrtnt" style="display:none">
+        <div class="scard-head"><span class="scard-title">Lektionen</span></div>
+        <div class="scard-list" id="lek-list-yIrmG9RSQOaRGmdkrtnt"></div>
+      </div>
+        <div class="sidebar-card">
+        <div class="scard-head"><span class="scard-title">Lernziele</span></div>
+        <ul class="obj-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4.5 4.5L19 7"/></svg>Kerninhalte dieser Lektion verstehen und anwenden</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4.5 4.5L19 7"/></svg>Wichtige Konzepte erkennen und einordnen</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4.5 4.5L19 7"/></svg>Das Erlernte in konkreten Situationen einsetzen</li>
+        </ul>
+      </div>
+      </aside>
+    </div>
+    
+    <div class="lesson-quiz" id="lq-wrap-yIrmG9RSQOaRGmdkrtnt">
+      <button class="lesson-quiz-toggle" onclick="toggleLQ('yIrmG9RSQOaRGmdkrtnt')">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg>
+        Wissenscheck: Emergency Calls
+        <svg class="lq-chev" id="lq-chev-yIrmG9RSQOaRGmdkrtnt" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div class="lesson-quiz-body" id="lq-body-yIrmG9RSQOaRGmdkrtnt" style="display:none">
+        <ol class="quiz-list" id="lq-list-yIrmG9RSQOaRGmdkrtnt"></ol>
+        <div class="lesson-quiz-actions" id="lq-actions-yIrmG9RSQOaRGmdkrtnt">
+          <button class="btn primary" id="lq-submit-yIrmG9RSQOaRGmdkrtnt" onclick="submitLQ('yIrmG9RSQOaRGmdkrtnt')" disabled>Auswerten</button>
+        </div>
+      </div>
+    </div>
+    <div class="module-foot">
+      <a href="chapter-routing-based-on-azure-dial-string-directory.html" class="btn ghost"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>Routing based on Azure Dial String Directory</a>
+      <a href="chapter-support.html" class="btn primary">Support<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+<button class="chat-fab" id="chat-fab" onclick="toggleChat()">
+  <div class="chat-fab-pulse"></div>
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" id="chat-fab-icon"><path d="M21 12c0 4.4-4 8-9 8a10 10 0 0 1-3.5-.6L3 21l1.3-4.2A7.6 7.6 0 0 1 3 12c0-4.4 4-8 9-8s9 3.6 9 8z"/></svg>
+</button>
+<div class="chat-panel" id="chat-panel">
+  <div class="chat-head">
+    <div class="chat-head-l">
+      <div class="chat-avatar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg></div>
+      <div><div class="chat-title">Schulungsassistent</div><div class="chat-status"><span class="dot-live"></span> Online</div></div>
+    </div>
+    <button class="chat-close" onclick="toggleChat()"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="chat-body" id="chat-body">
+    <div class="chat-empty" id="chat-empty">
+      <div class="chat-empty-mark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg></div>
+      <div class="chat-empty-h">Schulungsassistent</div>
+      <div class="chat-empty-sub">Stelle Fragen zu den Schulungsinhalten</div>
+      <div class="chat-examples">
+        <button class="chat-example" onclick="sendExample(this.textContent)">Was ist das zentrale Thema dieser Schulung?</button>
+        <button class="chat-example" onclick="sendExample(this.textContent)">Fasse die wichtigsten Punkte zusammen.</button>
+        <button class="chat-example" onclick="sendExample(this.textContent)">Erkläre das Thema mit einem Beispiel.</button>
+      </div>
+    </div>
+  </div>
+  <div class="chat-toolbar">
+    <button class="chat-web-btn" id="chat-web-btn" onclick="toggleWebSearch()" title="Externe Websuche aktivieren">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M2 12h20M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"/></svg>
+      Web-Research
+    </button>
+  </div>
+  <div class="chat-input-row" id="chat-input-row">
+    <textarea class="chat-input-el" id="chat-input-el" placeholder="Frage stellen …" rows="1" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendChat()}" oninput="this.style.height='auto';this.style.height=Math.min(this.scrollHeight,100)+'px'"></textarea>
+    <button class="chat-send" id="chat-send-btn" onclick="sendChat()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12 21 4l-4 17-4-8-9-1z"/></svg></button>
+  </div>
+</div>
+<script type="application/json" id="ctx-lq">{"yIrmG9RSQOaRGmdkrtnt":[{"explain":"Art, Ort und Personenanzahl ermöglichen es der Leitstelle, die richtige Ressource mit angemessener Kapazität schnell zu entsenden. Dies sind die kritischsten Informationen für eine effektive Notrufabwicklung.","options":["Der Name und die Adresse des Anrufers","Die Art des Notfalls, der genaue Ort und die Anzahl der betroffenen Personen","Die Versicherungsnummer des Patienten","Die bevorzugte Sprache des Notfallteams"],"q":"Welche Informationen sind bei einem Notruf am wichtigsten, um schnell Hilfe zu mobilisieren?","correct":1},{"explain":"Die Leitstelle kann die Situation überwachen, sich ändernde Bedingungen berücksichtigen und telefonische Erste-Hilfe-Anleitung geben, was kritisch für die Patientenversorgung vor Eintreffen der Rettungskräfte ist.","options":["Um die Leitstelle zu beschäftigen und ihre Arbeit zu erleichtern","Weil die Leitstelle Echtzeit-Updates benötigt und Erste-Hilfe-Maßnahmen anleiten kann, bevor Rettungskräfte eintreffen","Um sicherzustellen, dass der Anruf korrekt abgerechnet wird","Weil Notrufnummern mit aktiven Anrufen bessere Verbindungen haben"],"q":"Warum ist es wichtig, während eines Notrufs in der Leitung zu bleiben und den Anweisungen der Leitstelle zu folgen?","correct":1},{"correct":1,"q":"Was sollten Sie tun, wenn Sie versehentlich eine Notrufnummer wählen?","options":["Sofort auflegen, um die Leitung für echte Notfälle freizugeben","In der Leitung bleiben und dem Dispatcher mitteilen, dass es ein versehentlicher Anruf war","Mehrmals anrufen, um dem Dispatcher zu zeigen, dass es kein echtes Notfall ist","Warten, bis die Leitstelle von sich aus anruft, um zu überprüfen"],"explain":"Wenn Sie auflegen, ohne es dem Dispatcher zu sagen, kann dieser einen echten Notfall vermuten und Ressourcen entsenden. Eine kurze Mitteilung verhindert unnötige Einsätze."},{"correct":1,"q":"Welches Verhalten kann während eines Notrufs zu Verzögerungen in der Rettung führen?","options":["Ruhig sprechen und relevante Details bereitstellen","Panisch schreien, unzusammenhängend reden oder wichtige Informationen zurückhalten","Die genaue Adresse mehrfach wiederholen","Fragen zu stellen, während man den Anweisungen folgt"],"explain":"Panik und unklare Kommunikation erschweren es der Leitstelle, die Situation zu verstehen und den richtigen Einsatz zu organisieren, was zu Verzögerungen und möglicherweise falscher Ressourcenallokation führt."}]}</script>
+<script>
+
+var LESSONS=[];var TITLES={};
+(function(){
+  document.querySelectorAll('.nav-lesson[data-id]').forEach(function(b){
+    var id=b.getAttribute('data-id');
+    if(!id||id==='__overview__'||id==='__cert__')return;
+    if(LESSONS.indexOf(id)===-1)LESSONS.push(id);
+    var titleEl=b.querySelector('.nav-lesson-title');
+    TITLES[id]=(titleEl&&titleEl.textContent&&titleEl.textContent.trim())||id;
+  });
+})();
+const TENANT_ID=(document.querySelector('meta[name="ctx-tenant"]')||{content:''}).content||'';
+const PK='ctx.progress.basic-online-training';
+var CUR_PAGE='yIrmG9RSQOaRGmdkrtnt';
+let prog=JSON.parse(localStorage.getItem(PK)||'{}');
+
+function updateProgress(){
+  var total=LESSONS.length;var done=LESSONS.filter(function(id){return prog[id];}).length;
+  var pct=total>0?done/total:0;var pctTxt=Math.round(pct*100)+'%';
+  var fill=document.getElementById('prog-fill');var footPct=document.getElementById('foot-pct');
+  var ringArc=document.getElementById('ring-arc');var ringLabel=document.getElementById('ring-label');
+  if(fill)fill.style.width=pctTxt;if(footPct)footPct.textContent=pctTxt;
+  if(ringArc)ringArc.style.strokeDashoffset=106.81*(1-pct);if(ringLabel)ringLabel.textContent=pctTxt;
+}
+function updateDoneBtn(id){
+  var btn=document.getElementById('done-btn-'+id);var lbl=document.getElementById('done-label-'+id);
+  if(!btn)return;var done=!!prog[id];btn.classList.toggle('is-done',done);
+  if(lbl)lbl.textContent=done?'Erledigt':'Als erledigt markieren';
+}
+function toggleDone(id){
+  prog[id]=!prog[id];localStorage.setItem(PK,JSON.stringify(prog));
+  updateDoneBtn(id);
+  document.querySelectorAll('.nav-lesson[data-id="'+id+'"]').forEach(function(b){b.classList.toggle('is-done',!!prog[id]);});
+  updateProgress();
+}
+function buildLektionenToc(id){
+  var card=document.getElementById('lek-card-'+id);var list=document.getElementById('lek-list-'+id);
+  var main=document.getElementById('main-'+id);
+  if(!card||!list||!main)return;
+  var headings=main.querySelectorAll('h1,h2');
+  if(!headings.length){card.style.display='none';return;}
+  card.style.display='';
+  list.className='toc-list';
+  list.innerHTML=Array.from(headings).map(function(h){
+    var cls=h.tagName==='H1'?'toc-item toc-h1':'toc-item toc-h2';
+    return '<button class="'+cls+'" onclick="var el=document.querySelector('[id]='+JSON.stringify(h.id || h.textContent)+'');if(!el)el=this.closest('.module-content').querySelector('h1,h2');if(el)el.scrollIntoView({behavior:'smooth'})">'+h.textContent+'</button>';
+  }).join('');
+}
+function toggleNavSec(id){
+  var body=document.getElementById('nav-sec-body-'+id);var chev=document.getElementById('nav-sec-chev-'+id);
+  if(!body)return;var open=body.classList.toggle('is-open');if(chev)chev.classList.toggle('is-open',open);
+}
+function toggleNavCh(id){
+  var body=document.getElementById('nav-ch-body-'+id);var chev=document.getElementById('nav-ch-chev-'+id);
+  if(!body)return;var open=body.classList.toggle('is-open');if(chev)chev.classList.toggle('is-open',open);
+}
+function toggleFaq(btn){
+  var row=btn.closest('.faq-row');var ans=row.querySelector('.faq-a');var chev=btn.querySelector('.faq-chev');
+  var open=ans.classList.toggle('is-open');chev.classList.toggle('is-open',open);
+}
+function switchCertTab(name,btn){
+  document.querySelectorAll('.cert-tab').forEach(function(t){t.classList.remove('is-active');});
+  document.querySelectorAll('.cert-section').forEach(function(s){s.classList.remove('is-active');});
+  btn.classList.add('is-active');document.getElementById('cert-sec-'+name).classList.add('is-active');
+  if(name==='cert')updateCertPct();
+}
+function updateCertPct(){
+  var total=LESSONS.length;var done=LESSONS.filter(function(id){return prog[id];}).length;
+  var pct=total>0?done/total:0;var pctEl=document.getElementById('cert-prog-pct');
+  if(pctEl)pctEl.textContent=Math.round(pct*100)+'%';
+}
+var I18N={de:{'nav.overview':'Übersicht','nav.lernmodule':'Lernmodule','nav.wissenstest':'Wissenstest & Zertifikat'},en:{'nav.overview':'Overview','nav.lernmodule':'Modules','nav.wissenstest':'Quiz & Certificate'}};
+var lang='de';
+function setLang(l){lang=l;document.querySelectorAll('[data-i18n]').forEach(function(el){var key=el.getAttribute('data-i18n');if(I18N[l]&&I18N[l][key]!==undefined)el.textContent=I18N[l][key];});document.querySelectorAll('.lang-btn').forEach(function(b){b.classList.toggle('is-active',b.dataset.lang===l);});}
+/* ── Per-lesson quiz ── */
+var LQ={};try{var _lqEl=document.getElementById('ctx-lq');if(_lqEl)LQ=JSON.parse(_lqEl.textContent||'{}');}catch(e){}
+var LQ_STATE={};
+function initLQ(lid){if(!LQ_STATE[lid])LQ_STATE[lid]={a:{},done:false};}
+function toggleLQ(lid){var body=document.getElementById('lq-body-'+lid);var chev=document.getElementById('lq-chev-'+lid);if(!body)return;var open=body.style.display==='none';body.style.display=open?'block':'none';if(chev)chev.style.transform=open?'rotate(180deg)':'';if(open&&!document.getElementById('lq-list-'+lid).innerHTML.trim())renderLQ(lid);}
+function renderLQ(lid){var questions=LQ[lid];var list=document.getElementById('lq-list-'+lid);if(!list||!questions||!questions.length)return;initLQ(lid);list.innerHTML=questions.map(function(q,qi){var opts=q.options.map(function(o,oi){return '<button class="quiz-opt" id="lqo-'+lid+'-'+qi+'-'+oi+'" onclick="pickLQ(\''+lid+'\','+qi+','+oi+')">'+'<span class="quiz-opt-marker">'+String.fromCharCode(65+oi)+'</span><span>'+o+'</span></button>';}).join('');return '<li class="quiz-q" id="lqq-'+lid+'-'+qi+'">'+'<div class="quiz-q-head"><span class="quiz-q-num">Frage '+(qi+1)+' / '+questions.length+'</span><span id="lqb-'+lid+'-'+qi+'"></span></div>'+'<div class="quiz-q-text">'+q.q+'</div>'+'<div class="quiz-options">'+opts+'</div>'+'<div class="quiz-explain" id="lqe-'+lid+'-'+qi+'" style="display:none"><strong>Erklärung:</strong> '+q.explain+'</div>'+'</li>';}).join('');}
+function pickLQ(lid,qi,oi){var state=LQ_STATE[lid];if(!state||state.done)return;state.a[qi]=oi;var questions=LQ[lid];questions[qi].options.forEach(function(_,i){var b=document.getElementById('lqo-'+lid+'-'+qi+'-'+i);if(b)b.classList.toggle('is-picked',i===oi);});var filled=Object.keys(state.a).length;var btn=document.getElementById('lq-submit-'+lid);if(btn)btn.disabled=filled<questions.length;}
+function submitLQ(lid){var state=LQ_STATE[lid];if(!state||state.done)return;state.done=true;var questions=LQ[lid];var score=0;questions.forEach(function(q,qi){var picked=state.a[qi];var correct=q.correct;var isCorrect=picked===correct;if(isCorrect)score++;q.options.forEach(function(_,oi){var btn=document.getElementById('lqo-'+lid+'-'+qi+'-'+oi);if(btn){btn.disabled=true;if(oi===correct)btn.classList.add('is-correct');if(oi===picked&&oi!==correct)btn.classList.add('is-wrong');}});var exp=document.getElementById('lqe-'+lid+'-'+qi);if(exp)exp.style.display='block';var badge=document.getElementById('lqb-'+lid+'-'+qi);if(badge)badge.innerHTML=isCorrect?'<span class="pill pill-accent">Richtig</span>':'<span class="pill" style="color:var(--danger);border-color:var(--danger)">Falsch</span>';});var passed=score/questions.length>=0.75;var actEl=document.getElementById('lq-actions-'+lid);if(actEl){var res='<div style="padding:12px 14px;border-radius:8px;font-size:13px;font-weight:600;margin-bottom:8px;'+(passed?'background:color-mix(in oklab,var(--success) 10%,var(--surface-2));color:var(--success);border:1px solid color-mix(in oklab,var(--success) 40%,transparent)':'background:color-mix(in oklab,var(--danger) 10%,var(--surface-2));color:var(--danger);border:1px solid color-mix(in oklab,var(--danger) 40%,transparent)')+'">'+score+' / '+questions.length+' richtig — '+(passed?'Bestanden ✓':'Nicht bestanden')+'</div>';actEl.innerHTML=res+'<button class="btn ghost" onclick="retryLQ(\''+lid+'\')">Nochmal versuchen</button>';}}
+function retryLQ(lid){LQ_STATE[lid]={a:{},done:false};renderLQ(lid);var actEl=document.getElementById('lq-actions-'+lid);if(actEl)actEl.innerHTML='<button class="btn primary" id="lq-submit-'+lid+'" onclick="submitLQ(\''+lid+'\')" disabled>Auswerten</button>';}
+/* ── Combined quiz (cert page) ── */
+var QUIZ=(function(){var all=[];Object.values(LQ).forEach(function(qs){if(Array.isArray(qs))all=all.concat(qs);});return all;})();
+var quizAnswers={};var quizSubmitted=false;
+function renderQuiz(){var list=document.getElementById('quiz-list');if(!list)return;list.innerHTML=QUIZ.map(function(q,qi){var opts=q.options.map(function(o,oi){return '<button class="quiz-opt" id="qo-'+qi+'-'+oi+'" onclick="pickQuiz('+qi+','+oi+')">'+'<span class="quiz-opt-marker">'+String.fromCharCode(65+oi)+'</span><span>'+o+'</span></button>';}).join('');return '<li class="quiz-q" id="qq-'+qi+'">'+'<div class="quiz-q-head"><span class="quiz-q-num">Frage '+(qi+1)+' / '+QUIZ.length+'</span><span id="qq-badge-'+qi+'"></span></div>'+'<div class="quiz-q-text">'+q.q+'</div>'+'<div class="quiz-options">'+opts+'</div>'+'<div class="quiz-explain" id="qe-'+qi+'" style="display:none"><strong>Erklärung:</strong> '+q.explain+'</div>'+'</li>';}).join('');}
+function pickQuiz(qi,oi){if(quizSubmitted)return;quizAnswers[qi]=oi;QUIZ[qi].options.forEach(function(_,i){document.getElementById('qo-'+qi+'-'+i).classList.toggle('is-picked',i===oi);});var btn=document.getElementById('quiz-submit-btn');if(btn)btn.disabled=Object.keys(quizAnswers).length<QUIZ.length;}
+function submitQuiz(){if(quizSubmitted)return;quizSubmitted=true;var score=0;QUIZ.forEach(function(q,qi){var picked=quizAnswers[qi];var correct=q.correct;var isCorrect=picked===correct;if(isCorrect)score++;q.options.forEach(function(_,oi){var btn=document.getElementById('qo-'+qi+'-'+oi);if(btn){btn.disabled=true;if(oi===correct)btn.classList.add('is-correct');if(oi===picked&&oi!==correct)btn.classList.add('is-wrong');}});var exp=document.getElementById('qe-'+qi);if(exp)exp.style.display='block';var badge=document.getElementById('qq-badge-'+qi);if(badge)badge.innerHTML=isCorrect?'<span class="pill pill-accent">Richtig</span>':'<span class="pill" style="color:var(--danger);border-color:var(--danger)">Falsch</span>';});var passed=score/QUIZ.length>=0.75;var rb=document.getElementById('quiz-result-bar');if(rb){rb.style.display='flex';rb.classList.toggle('is-pass',passed);rb.classList.toggle('is-fail',!passed);var st=document.getElementById('quiz-score-txt');var pt=document.getElementById('quiz-pass-txt');if(st)st.textContent=score+'/'+QUIZ.length;if(pt)pt.textContent=passed?'Bestanden ✓':'Nicht bestanden';}var actions=document.getElementById('quiz-actions');if(actions)actions.innerHTML='<button class="btn ghost" onclick="location.reload()">Nochmal versuchen</button>'+(passed?'<button class="btn primary" onclick="switchCertTab(\'cert\',document.querySelectorAll(\'.cert-tab\')[1])">Zertifikat anzeigen</button>':'');}
+/* ── YouTube lazy loading ── */
+try{document.querySelectorAll('.ctx-video-wrap').forEach(function(wrap){try{var iframe=wrap.querySelector('iframe');if(!iframe)return;var src=iframe.getAttribute('src')||'';var m=src.match(/embed\/([a-zA-Z0-9_-]{11})/);if(!m)return;var vid=m[1];var autoSrc=src+(src.includes('?')?'&':'?')+'autoplay=1';wrap.innerHTML='<img class="ctx-video-thumb" src="https://img.youtube.com/vi/'+vid+'/maxresdefault.jpg" alt="Video" onerror="this.src=\'https://img.youtube.com/vi/'+vid+'/hqdefault.jpg\'">'+'<div class="ctx-video-play"><div class="ctx-video-play-btn"><svg width="28" height="28" viewBox="0 0 24 24" fill="white" style="margin-left:3px"><path d="M8 5v14l11-7z"/></svg></div></div>';wrap.addEventListener('click',function(){var f=document.createElement('iframe');f.src=autoSrc;f.style.cssText='position:absolute;top:0;left:0;width:100%;height:100%;border:0';f.allow='accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture';f.allowFullscreen=true;wrap.innerHTML='';wrap.appendChild(f);},{once:true});}catch(e){}});}catch(e){}
+/* ── Chat ── */
+var chatHistory=[];var chatBusy=false;var chatWebSearch=false;
+var CHAT_FN='https://europe-west1-contextr-app.cloudfunctions.net/academyChat';
+function getAllContent(){var parts=[];LESSONS.forEach(function(id){var el=document.getElementById('main-'+id);var title=TITLES[id]||id;if(el)parts.push('[Titel: "'+title+'"]\n'+(el.textContent||'').replace(/\s+/g,' ').trim());});return parts.join('\n\n');}
+function toggleChat(){var fab=document.getElementById('chat-fab');var panel=document.getElementById('chat-panel');var icon=document.getElementById('chat-fab-icon');if(!fab||!panel)return;var open=panel.classList.toggle('is-open');fab.classList.toggle('is-open',open);if(icon)icon.innerHTML=open?'<path d="m18 6-12 12M6 6l12 12"/>':'<path d="M21 12c0 4.4-4 8-9 8a10 10 0 0 1-3.5-.6L3 21l1.3-4.2A7.6 7.6 0 0 1 3 12c0-4.4 4-8 9-8s9 3.6 9 8z"/>';}
+function sendExample(txt){var input=document.getElementById('chat-input-el');if(input){input.value=txt;sendChat();}}
+function toggleWebSearch(){chatWebSearch=!chatWebSearch;var btn=document.getElementById('chat-web-btn');if(btn)btn.classList.toggle('is-on',chatWebSearch);}
+function appendUserMsg(msg){var body=document.getElementById('chat-body');var div=document.createElement('div');div.className='chat-msg is-user';div.innerHTML='<div class="chat-bubble">'+msg.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';body.appendChild(div);body.scrollTop=body.scrollHeight;}
+function appendBotMsg(html){var body=document.getElementById('chat-body');var div=document.createElement('div');div.className='chat-msg';div.innerHTML='<div class="chat-bubble"><div class="chat-bubble-html">'+html+'</div></div>';body.appendChild(div);body.scrollTop=body.scrollHeight;return div;}
+function appendTyping(){var body=document.getElementById('chat-body');var div=document.createElement('div');div.className='chat-msg';div.innerHTML='<div class="chat-bubble"><span class="typing"><i></i><i></i><i></i></span></div>';body.appendChild(div);body.scrollTop=body.scrollHeight;return div;}
+function sendChat(){if(chatBusy)return;var input=document.getElementById('chat-input-el');var msg=input.value.trim();if(!msg)return;input.value='';input.style.height='auto';document.getElementById('chat-empty').style.display='none';appendUserMsg(msg);chatHistory.push({role:'user',content:msg});chatBusy=true;document.getElementById('chat-send-btn').disabled=true;var fullReply='';var botEl=null;var typingEl=appendTyping();fetch(CHAT_FN,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({tenantId:TENANT_ID,messages:chatHistory,context:getAllContent(),stream:true,webSearch:chatWebSearch})}).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);var reader=r.body.getReader();var dec=new TextDecoder();var buf='';var chatBody=document.getElementById('chat-body');function pump(){return reader.read().then(function(chunk){if(chunk.done)return;buf+=dec.decode(chunk.value,{stream:true});var lines=buf.split('\n');buf=lines.pop()||'';lines.forEach(function(line){if(!line.startsWith('data:'))return;var d=line.slice(5).trim();if(d==='[DONE]')return;try{var p=JSON.parse(d);var t=p.choices?.[0]?.delta?.content||'';if(t){fullReply+=t;if(!botEl){if(typingEl&&typingEl.parentNode)typingEl.parentNode.removeChild(typingEl);botEl=appendBotMsg('');typingEl=null;}var bh=botEl.querySelector('.chat-bubble-html');if(bh)bh.innerHTML=fullReply.replace(/\n/g,'<br>');chatBody.scrollTop=chatBody.scrollHeight;}}catch(e){}});return pump();});}return pump();}).catch(function(err){if(typingEl&&typingEl.parentNode)typingEl.parentNode.removeChild(typingEl);appendBotMsg('<em>Fehler: '+err.message+'</em>');}).finally(function(){chatBusy=false;var sb=document.getElementById('chat-send-btn');if(sb)sb.disabled=false;chatHistory.push({role:'assistant',content:fullReply});});}
+/* ── Init ── */
+try{
+  LESSONS.forEach(function(id){if(prog[id])updateDoneBtn(id);});
+  document.querySelectorAll('.nav-lesson[data-id]').forEach(function(b){if(prog[b.getAttribute('data-id')])b.classList.add('is-done');});
+  updateProgress();
+  if(CUR_PAGE!=='__overview__'&&CUR_PAGE!=='__cert__'){updateDoneBtn(CUR_PAGE);buildLektionenToc(CUR_PAGE);}
+  if(CUR_PAGE==='__cert__'){try{renderQuiz();}catch(e){}}
+}catch(e){console.warn('[ContextR] Init error:',e);}
+/* ── Quiz data ── */
+try{var _lqEl=document.getElementById('ctx-lq');if(_lqEl)LQ=JSON.parse(_lqEl.textContent||'{}');}catch(e){}
+</script>
+</body>
+</html>
